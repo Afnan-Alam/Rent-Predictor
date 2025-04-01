@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rent Predictor</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="app.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Rent Price Predictor</h1>
+    <form id="predict-form">
+      <label for="location">Location</label>
+      <input type="text" id="location" name="location" placeholder="Enter City (e.g. Toronto)" required>
+
+      <label for="type">Type</label>
+      <select id="type" name="type">
+        <option value="Apartment">Apartment</option>
+        <option value="Condo Unit">Condo Unit</option>
+        <option value="House">House</option>
+        <option value="Townhouse">Townhouse</option>
+        <option value="Basement">Basement</option>
+        <option value="Duplex">Duplex</option>
+        <option value="main floor">Main Floor</option>
+      </select>
+
+      <label for="beds">Bedrooms</label>
+      <select id="beds" name="beds">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4+</option>
+      </select>
+
+      <label for="baths">Bathrooms</label>
+      <select id="baths" name="baths">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4+</option>
+      </select>
+
+      <label for="sq_feet">Square Feet</label>
+      <input type="text" id="sq_feet" name="sq_feet" placeholder="e.g. 1000" required>
+
+      <label for="furnishingb">Furnished</label>
+      <select id="furnishingb" name="furnishingb">
+        <option value="0">No</option>
+        <option value="1">Yes</option>
+      </select>
+
+      <label for="smokingb">Smoking Allowed</label>
+      <select id="smokingb" name="smokingb">
+        <option value="0">No</option>
+        <option value="1">Yes</option>
+      </select>
+
+      <label for="catsb">Allows Cats</label>
+      <select id="catsb" name="catsb">
+        <option value="0">No</option>
+        <option value="1">Yes</option>
+      </select>
+
+      <label for="dogsb">Allows Dogs</label>
+      <select id="dogsb" name="dogsb">
+        <option value="0">No</option>
+        <option value="1">Yes</option>
+      </select>
+
+      <button type="submit">Estimate Rent</button>
+    </form>
+
+    <div class="result" id="result"></div>
+  </div>
+
+  <div class="purpose-card">
+    <h2 class="purpose-title">Purpose</h2>
+    <div class="purpose-content">
+      <p>
+        In today’s uncertain economy, many individuals and families face financial challenges when trying to secure housing.
+        This tool was built to help renters get a clearer idea of how much they might expect to pay based on their needs and
+        the city they’re in — without any financial barrier.
+      </p>
+      <p>
+        Tools like this should be accessible to everyone, and not locked behind paywalls or exclusive platforms.
+        Use it freely to make more informed and confident decisions when looking for a place to live.
+      </p>
+    </div>
+  </div>
+  
+  
+  
+  
+
+  <!-- Link to external JS -->
+  <script src="app.js"></script>
+</body>
+</html>

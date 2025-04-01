@@ -1,0 +1,121 @@
+/* app.css */
+* {
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background: linear-gradient(135deg, #e0f2fe, #ffffff);
+    color: #333;
+    padding: 40px;
+  }
+  
+  .container {
+    max-width: 600px;
+    background: #ffffff;
+    margin: auto;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.1);
+    border: 1px solid #dbeafe;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 24px;
+    color: #1d4ed8;
+  }
+  
+  label {
+    display: block;
+    margin-top: 16px;
+    font-weight: 600;
+    color: #1e3a8a;
+  }
+  
+  input[type="text"],
+  select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    border: 1px solid #93c5fd;
+    border-radius: 10px;
+    font-size: 16px;
+    transition: border-color 0.2s;
+  }
+  
+  input[type="text"]:focus,
+  select:focus {
+    border-color: #3b82f6;
+    outline: none;
+  }
+  
+  button {
+    margin-top: 28px;
+    width: 100%;
+    padding: 14px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+    transition: background 0.3s ease, transform 0.2s;
+  }
+  
+  button:hover {
+    background: #1d4ed8;
+    transform: translateY(-1px);
+  }
+  
+  .result {
+    margin-top: 28px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 600;
+    color: #16a34a;
+    background: #dcfce7;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #86efac;
+  }
+
+
+
+
+
+  .purpose-card {
+    max-width: 600px;
+    margin: 40px auto 0 auto;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.05);
+    border: 1px solid #dbeafe;
+    padding: 24px 32px;
+  }
+  
+  .purpose-title {
+    text-align: center;
+    color: #1d4ed8;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 16px;
+  }
+  
+  .purpose-content {
+    font-size: 17px;
+    color: #1f2937;
+    line-height: 1.8;
+    text-align: justify;
+    padding-top: 4px;
+  }
+  
+  .purpose-content p {
+    text-indent: 2em; /* Adds a tab-like indent */
+    margin-bottom: 16px; /* Adds spacing between paragraphs */
+  }
+  
